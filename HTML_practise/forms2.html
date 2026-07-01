@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Job Application</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br/>
+        <br/>
+
+        <label for="emailID">Email::</label>
+        <input type="text" id="emailID" name="emailID">
+        <br/>
+        <br/>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+        <br/>
+        <br/>
+
+        <label for="resume">Resume:</label>
+        <input type="file" id="resume" name="resume">
+        <br/>
+        <br/>
+
+        <label for="experience">Experience(years):</label>
+        <input type="number" id="experience" name="experience" min="0" max="50">
+        <br>
+        <select id="experience" name="experience">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <br> 
+        <br>
+
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="checkbox1">HTML</label>
+            <input type="checkbox" id="checkbox1" name="checkbox1">
+            <br>
+            <label for="checkbox2">CSS</label>
+            <input type="checkbox" id="checkbox2" name="checkbox2">
+            <br>
+            <label for="checkbox3">JavaScript</label>
+            <input type="checkbox" id="checkbox3" name="checkbox3">
+        </fieldset>
+        <br>
+        <br>
+
+        <label for="education">Highest Education:</label>
+        <select id="education" name="education">
+            <option value="high school">High School</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="graduate">Graduate</option>
+            <option value="doctorate">Doctorate</option>
+        </select>
+        <br>
+        <br>
+
+        <label for="job type">Availabilty:</label>
+        <br>
+        <input type="radio" id="full time" name="job type" value="full time">
+        <label for="full time">Full-time</label>
+        <br>
+        <input type="radio" id="part time" name="job type" value="part time">
+        <label for="part time">Part-time</label>
+        <br>
+        <br>
+
+        <label for="comments">Additional comments:</label>
+        <br>
+        <textarea name="comments" id="comments" cols="30" rows="5" placeholder="Enter your feedback here"></textarea>
+        <br>
+        <input type="submit" value="Register">
+
+
+    </form>
+</body>
+</html>
