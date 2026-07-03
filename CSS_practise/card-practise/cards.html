@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            width: 360px;
+            height: 545px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            box-sizing: border-box;
+            overflow: hidden;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+        .card:hover{
+            transform: translateY(-20px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.9);
+        }
+        .card img{
+            width: 100%;
+            height: 57%;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+            aspect-ratio: 4/3;
+        }
+        .card h2{
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        p{
+            font-size: 1rem;
+            text-align: center;
+            padding: 0 20px;
+            color: #6b7280;
+            line-height: 1.5;
+        }
+        .badge{
+            background: #e8f0fe;
+            color: #1a73e8;
+            font-size: 0.72rem;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 20px;
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+        }
+        .btn{
+            width: 100%;
+            padding: 10px;
+            background: #1a73e8;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background: #eb2946;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="qr.svg" alt="QR Code">
+            <span class="badge">QR Code</span>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquam, expedita adipisci facere nisi ducimus.</p>
+            <button class="btn">Scan QR code</button>
+        </div>
+    </div>
+</body>
+</html>
